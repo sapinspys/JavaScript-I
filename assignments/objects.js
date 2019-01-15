@@ -18,7 +18,16 @@ const example = {
 }
 
 // Write your intern objects here:
+function crtObj(dataStr) {
+  let dataArr = dataStr.split(',');
+  return {'id': dataArr[0], "name": dataArr[2], "email": dataArr[1], "gender": dataArr[3]};
+}
 
+const mitzi = crtObj('1,mmelloy0@psu.edu,Mitzi,F');
+const kennan = crtObj('2,kdiben1@tinypic.com,Kennan,M');
+const keven = crtObj('3,kmummery2@wikimedia.org,Keven,M');
+const gannie = crtObj('4,gmartinson3@illinois.edu,Gannie,M');
+const antonietta = crtObj('5,adaine5@samsung.com,Antonietta,F');
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
